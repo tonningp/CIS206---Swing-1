@@ -12,10 +12,7 @@ import javax.swing.JFrame;
 import javax.swing.Box;
 import javax.swing.BoxLayout;
 
-/*
- * BorderDemo.java requires the following file:
- *    images/wavy.gif
- */
+
 public class Main extends JPanel {
     public Main() {
         super(new GridLayout(1,0));
@@ -218,11 +215,11 @@ public class Main extends JPanel {
      */
     private static void createAndShowGUI() {
         //Create and set up the window.
-        JFrame frame = new JFrame("BorderDemo");
+        JFrame frame = new JFrame("Swing 1");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         //Create and set up the content pane.
-        BorderDemo newContentPane = new BorderDemo();
+        Main newContentPane = new Main();
         newContentPane.setOpaque(true); //content panes must be opaque
         frame.setContentPane(newContentPane);
 
